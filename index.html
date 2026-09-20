@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق قائمة المهام 📝</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- حاوية التطبيق الرئيسية -->
+    <div class="container">
+        <!-- رأس التطبيق -->
+        <h1>📝 قائمة مهامي</h1>
+        
+        <!-- قسم إضافة مهمة جديدة -->
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="اكتبي المهمة الجديدة هنا..."
+                onkeypress="handleKeyPress(event)"
+            >
+            <button onclick="addTask()">إضافة</button>
+        </div>
+
+        <!-- قسم عرض المهام -->
+        <div class="tasks-section">
+            <h2>مهامي:</h2>
+            <!-- قائمة المهام ستظهر هنا -->
+            <ul id="tasksList">
+                <!-- سيتم إضافة المهام هنا بواسطة JavaScript -->
+            </ul>
+            
+            <!-- رسالة عندما لا توجد مهام -->
+            <p id="emptyMessage" class="empty-message">لا توجد مهام حالياً 😊</p>
+        </div>
+    </div>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

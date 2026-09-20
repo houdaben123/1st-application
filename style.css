@@ -1,0 +1,156 @@
+/* إعادة تعيين الأنماط الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تنسيق الجسم الرئيسي */
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    color: #333;
+}
+
+/* حاوية التطبيق الرئيسية */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* العنوان الرئيسي */
+h1 {
+    color: #0066cc;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* العناوين الفرعية */
+h2 {
+    color: #0066cc;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* قسم الإدخال */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+/* حقل الإدخال */
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #0066cc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* تأثير عند التركيز على حقل الإدخال */
+#taskInput:focus {
+    border-color: #0052a3;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+/* زر الإضافة */
+button {
+    padding: 12px 25px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/* تأثير عند تمرير الماوس على الزر */
+button:hover {
+    background-color: #0052a3;
+}
+
+/* تأثير عند الضغط على الزر */
+button:active {
+    transform: scale(0.98);
+}
+
+/* قسم المهام */
+.tasks-section {
+    margin-top: 20px;
+}
+
+/* قائمة المهام */
+#tasksList {
+    list-style: none;
+    padding: 0;
+}
+
+/* عنصر المهمة الواحد */
+li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-right: 4px solid #0066cc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* تأثير عند تمرير الماوس على المهمة */
+li:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 2px 5px rgba(0, 102, 204, 0.2);
+}
+
+/* نص المهمة */
+.task-text {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+/* زر الحذف */
+.delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* تأثير عند تمرير الماوس على زر الحذف */
+.delete-btn:hover {
+    background-color: #ff5252;
+}
+
+/* رسالة عدم وجود مهام */
+.empty-message {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    padding: 20px;
+    display: none;
+}
+
+/* إظهار رسالة عدم وجود مهام */
+.empty-message.show {
+    display: block;
+}
